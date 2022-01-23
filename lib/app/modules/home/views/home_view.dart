@@ -1,4 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:bornomala/app/routes/app_pages.dart';
 import 'package:bouncing_widget/bouncing_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +30,7 @@ class HomeView extends GetView<HomeController> {
                       fontSize: 32.0,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
-                  speed: const Duration(milliseconds: 400),
+                  speed: const Duration(milliseconds: 200),
                 ),
               ],
               totalRepeatCount: 1,
@@ -54,20 +55,15 @@ class HomeView extends GetView<HomeController> {
                       padding: const EdgeInsets.all(20.0),
                       child: BouncingWidget(
                         duration: Duration(milliseconds: 90),
-                        scaleFactor: 3,
-                        onPressed: () {},
-                        child: AnimatedTextKit(
-                          animatedTexts: [
-                            TyperAnimatedText(
-                              'BANGLA BORNOMALA',
-                              textStyle: const TextStyle(
-                                  fontSize: 32.0,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                              speed: const Duration(milliseconds: 200),
-                            ),
-                          ],
-                          totalRepeatCount: 1,
+                        onPressed: () {
+                          Get.toNamed(Routes.BANGLABORNOMALA);
+                        },
+                        child: Text(
+                          'BANGLA BORNOMALA',
+                          style: TextStyle(
+                              fontSize: 32.0,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
                         ),
                       ),
                     ),
@@ -88,20 +84,16 @@ class HomeView extends GetView<HomeController> {
                       padding: const EdgeInsets.all(20.0),
                       child: BouncingWidget(
                         duration: Duration(milliseconds: 90),
-                        scaleFactor: 3,
-                        onPressed: () {},
-                        child: AnimatedTextKit(
-                          animatedTexts: [
-                            TyperAnimatedText(
-                              'ENGLISH ALPHABETS',
-                              textStyle: const TextStyle(
-                                  fontSize: 32.0,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                              speed: const Duration(milliseconds: 200),
-                            ),
-                          ],
-                          totalRepeatCount: 1,
+                        onPressed: () {
+                          Get.toNamed(Routes.ENGLISHALPHABETS);
+                        },
+                        child: Text(
+                          "ENGLISH ALPHABETS",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),
@@ -122,20 +114,15 @@ class HomeView extends GetView<HomeController> {
                       padding: const EdgeInsets.all(20.0),
                       child: BouncingWidget(
                         duration: Duration(milliseconds: 90),
-                        scaleFactor: 3,
-                        onPressed: () {},
-                        child: AnimatedTextKit(
-                          animatedTexts: [
-                            TyperAnimatedText(
-                              '(1-20) NUMBERS',
-                              textStyle: const TextStyle(
-                                  fontSize: 32.0,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                              speed: const Duration(milliseconds: 200),
-                            ),
-                          ],
-                          totalRepeatCount: 1,
+                        onPressed: () {
+                          Get.toNamed(Routes.MATHNUMBERS);
+                        },
+                        child: Text(
+                          '(1-20) NUMBERS',
+                          style: TextStyle(
+                              fontSize: 32.0,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
                         ),
                       ),
                     ),
@@ -156,20 +143,15 @@ class HomeView extends GetView<HomeController> {
                       padding: const EdgeInsets.all(20.0),
                       child: BouncingWidget(
                         duration: Duration(milliseconds: 90),
-                        scaleFactor: 3,
-                        onPressed: () {},
-                        child: AnimatedTextKit(
-                          animatedTexts: [
-                            TyperAnimatedText(
-                              '(1-20) BanglaSonkkha',
-                              textStyle: const TextStyle(
-                                  fontSize: 32.0,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                              speed: const Duration(milliseconds: 200),
-                            ),
-                          ],
-                          totalRepeatCount: 1,
+                        onPressed: () {
+                          Get.toNamed(Routes.MATHNUMBERSBNG);
+                        },
+                        child: Text(
+                          '(1-20) BanglaSonkkha',
+                          style: TextStyle(
+                              fontSize: 32.0,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
                         ),
                       ),
                     ),
