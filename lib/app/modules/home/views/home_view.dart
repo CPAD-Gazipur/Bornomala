@@ -12,12 +12,7 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
-      // appBar: AppBar(
-
-      //   title: Text('HomeView'),
-      //   centerTitle: true,
-      // ),
+      backgroundColor: Color(0xff10002b),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
@@ -38,125 +33,141 @@ class HomeView extends GetView<HomeController> {
             SizedBox(
               height: 155,
             ),
-            Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(
-                        width: 3,
-                        color: Colors.yellowAccent,
-                      ),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: BouncingWidget(
-                        duration: Duration(milliseconds: 90),
-                        onPressed: () {
-                          Get.toNamed(Routes.BANGLABORNOMALA);
-                        },
-                        child: Text(
-                          'BANGLA BORNOMALA',
-                          style: TextStyle(
-                              fontSize: 32.0,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white),
+            Container(
+              decoration: BoxDecoration(
+                  gradient: SweepGradient(
+                center: FractionalOffset.topRight,
+                startAngle: 2,
+                endAngle: 5,
+                colors: const <Color>[
+                  Color(0xff10002b),
+                  Color(0xff5a189a),
+                ],
+                stops: const <double>[0.0, 0.7],
+              )),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            width: 3,
+                            color: Colors.yellowAccent,
+                          ),
                         ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 45,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(
-                        width: 3,
-                        color: Colors.yellowAccent,
-                      ),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: BouncingWidget(
-                        duration: Duration(milliseconds: 90),
-                        onPressed: () {
-                          Get.toNamed(Routes.ENGLISHALPHABETS);
-                        },
-                        child: Text(
-                          "ENGLISH ALPHABETS",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
+                        child: Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: BouncingWidget(
+                            duration: Duration(milliseconds: 90),
+                            onPressed: () {
+                              Get.toNamed(Routes.BANGLABORNOMALA);
+                            },
+                            child: Text(
+                              'BANGLA BORNOMALA',
+                              style: TextStyle(
+                                  fontSize: 32.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 45,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(
-                        width: 3,
-                        color: Colors.yellowAccent,
+                      SizedBox(
+                        height: 45,
                       ),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: BouncingWidget(
-                        duration: Duration(milliseconds: 90),
-                        onPressed: () {
-                          Get.toNamed(Routes.MATHNUMBERS);
-                        },
-                        child: Text(
-                          '(1-20) NUMBERS',
-                          style: TextStyle(
-                              fontSize: 32.0,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            width: 3,
+                            color: Colors.yellowAccent,
+                          ),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: BouncingWidget(
+                            duration: Duration(milliseconds: 90),
+                            onPressed: () {
+                              Get.toNamed(Routes.ENGLISHALPHABETS);
+                            },
+                            child: Text(
+                              "ENGLISH ALPHABETS",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 55,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(
-                        width: 3,
-                        color: Colors.yellowAccent,
+                      SizedBox(
+                        height: 45,
                       ),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: BouncingWidget(
-                        duration: Duration(milliseconds: 90),
-                        onPressed: () {
-                          Get.toNamed(Routes.MATHNUMBERSBNG);
-                        },
-                        child: Text(
-                          '(1-20) BanglaSonkkha',
-                          style: TextStyle(
-                              fontSize: 32.0,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            width: 3,
+                            color: Colors.yellowAccent,
+                          ),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: BouncingWidget(
+                            duration: Duration(milliseconds: 90),
+                            onPressed: () {
+                              Get.toNamed(Routes.MATHNUMBERS);
+                            },
+                            child: Text(
+                              '(1-30) NUMBERS',
+                              style: TextStyle(
+                                  fontSize: 32.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
+                            ),
+                          ),
                         ),
                       ),
-                    ),
+                      SizedBox(
+                        height: 55,
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            width: 3,
+                            color: Colors.yellowAccent,
+                          ),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: BouncingWidget(
+                            duration: Duration(milliseconds: 90),
+                            onPressed: () {
+                              Get.toNamed(Routes.MATHNUMBERSBNG);
+                            },
+                            child: Text(
+                              '   (১-৩০) সংখ্যা  ',
+                              style: TextStyle(
+                                  fontSize: 32.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                ],
+                ),
               ),
             ),
           ],
