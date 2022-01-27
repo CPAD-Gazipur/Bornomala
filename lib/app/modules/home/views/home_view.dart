@@ -35,16 +35,17 @@ class HomeView extends GetView<HomeController> {
             ),
             Container(
               decoration: BoxDecoration(
-                  gradient: SweepGradient(
-                center: FractionalOffset.topRight,
-                startAngle: 2,
-                endAngle: 5,
-                colors: const <Color>[
-                  Color(0xff10002b),
-                  Color(0xff5a189a),
-                ],
-                stops: const <double>[0.0, 0.7],
-              )),
+                gradient: SweepGradient(
+                  center: FractionalOffset.topRight,
+                  startAngle: 2,
+                  endAngle: 5,
+                  colors: const <Color>[
+                    Color(0xff10002b),
+                    Color(0xff5a189a),
+                  ],
+                  stops: const <double>[0.0, 0.7],
+                ),
+              ),
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Center(
@@ -97,7 +98,7 @@ class HomeView extends GetView<HomeController> {
                               Get.toNamed(Routes.ENGLISHALPHABETS);
                             },
                             child: Text(
-                              "ENGLISH ALPHABETS",
+                              " ENGLISH  ALPHABETS ",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 30,
@@ -127,7 +128,7 @@ class HomeView extends GetView<HomeController> {
                               Get.toNamed(Routes.MATHNUMBERS);
                             },
                             child: Text(
-                              '(1-30) NUMBERS',
+                              '    (1-30)   NUMBERS    ',
                               style: TextStyle(
                                   fontSize: 32.0,
                                   fontWeight: FontWeight.bold,
@@ -156,7 +157,7 @@ class HomeView extends GetView<HomeController> {
                               Get.toNamed(Routes.MATHNUMBERSBNG);
                             },
                             child: Text(
-                              '   (১-৩০) সংখ্যা  ',
+                              '   (১-৩০) সংখ্যা (বাংলা)  ',
                               style: TextStyle(
                                   fontSize: 32.0,
                                   fontWeight: FontWeight.bold,

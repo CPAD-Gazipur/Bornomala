@@ -21,4 +21,7 @@ dev_dependencies:
 
 flutter: 
   uses-material-design: true
+assets:
+  - G:/git repository/Bornomala/assets
+
 
