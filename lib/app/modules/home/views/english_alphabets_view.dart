@@ -1,4 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+// import 'package:audioplayer/audioplayer.dart';
 import 'package:bornomala/app/modules/home/controllers/home_controller.dart';
 import 'package:bornomala/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +12,7 @@ class EnglishAlphabetsView extends GetView {
     return Scaffold(
       backgroundColor: Color(0xff10002b),
       body: Padding(
-        padding: const EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(10.0),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -20,7 +21,7 @@ class EnglishAlphabetsView extends GetView {
                   WavyAnimatedText(
                     'English Alphabets',
                     textStyle: const TextStyle(
-                        fontSize: 60.0,
+                        fontSize: 30,
                         fontWeight: FontWeight.bold,
                         color: Colors.white),
                     speed: const Duration(milliseconds: 200),
@@ -29,7 +30,7 @@ class EnglishAlphabetsView extends GetView {
                 totalRepeatCount: 1,
               ),
               SizedBox(
-                height: 80,
+                height: 40,
               ),
               Wrap(
                 spacing: 20,

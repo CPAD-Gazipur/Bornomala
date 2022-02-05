@@ -20,7 +20,7 @@ class MathNumbersView extends GetView {
                   WavyAnimatedText(
                     'Math Numbers',
                     textStyle: const TextStyle(
-                        fontSize: 60.0,
+                        fontSize: 30.0,
                         fontWeight: FontWeight.bold,
                         color: Colors.white),
                     speed: const Duration(milliseconds: 200),
@@ -29,7 +29,7 @@ class MathNumbersView extends GetView {
                 totalRepeatCount: 1,
               ),
               SizedBox(
-                height: 100,
+                height: 40,
               ),
               Wrap(
                 spacing: 20,

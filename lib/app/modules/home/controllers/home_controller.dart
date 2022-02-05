@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {
@@ -157,5 +158,8 @@ class HomeController extends GetxController {
     '২৮',
     '২৯',
     '৩০',
+  ];
+  static const List<String> sound = [
+    "G:/git repository/CPAD-Gazipur/Bornomala/assets/sounds/a.mp3",
   ];
 }
